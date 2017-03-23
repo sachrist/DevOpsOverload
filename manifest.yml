@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 2
+  domain: mybluemix.net
+  name: DevOpsOverload
+  host: DevOpsOverload
+  disk_quota: 1024M
+  services:
+  - DevOpsOverload-cloudantNoSQLDB
+  - Auto-Scaling-lx
